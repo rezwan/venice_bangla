@@ -33,6 +33,12 @@ export class NavMenu extends Component {
                 <Glyphicon glyph='th-list' /> Fetch data
               </NavItem>
             </LinkContainer>
+            <LinkContainer to={'/client'}>
+              <NavItem>
+                <Glyphicon glyph='education' /> Client
+              </NavItem>
+            </LinkContainer>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>

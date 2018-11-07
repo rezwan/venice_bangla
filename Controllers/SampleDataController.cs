@@ -26,7 +26,7 @@ namespace venice_bangla.Controllers
             });
         }
 
-        public class WeatherForecast
+        public class    WeatherForecast
         {
             public string DateFormatted { get; set; }
             public int TemperatureC { get; set; }

@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,27 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="ClientApp\src\App.test.js" />
+    <None Remove="ClientApp\src\Client\components\Layout %28copy%29.js" />
+    <None Remove="ClientApp\src\themes\js\jquery-1.7.2.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClientApp\src\Client\" />
+    <Folder Include="ClientApp\src\Admin\" />
+    <Folder Include="ClientApp\src\Admin\components\" />
+    <Folder Include="ClientApp\src\Client\components\" />
+    <Folder Include="ClientApp\src\bootstrap\" />
+    <Folder Include="ClientApp\src\themes\" />
+    <Folder Include="ClientApp\src\themes\css\" />
+    <Folder Include="ClientApp\src\themes\js\" />
+    <Folder Include="ClientApp\src\themes\images\" />
+    <Folder Include="ClientApp\src\themes\js\css\" />
+    <Folder Include="ClientApp\src\themes\images\carousel\" />
+    <Folder Include="ClientApp\src\themes\images\clients\" />
+    <Folder Include="ClientApp\src\themes\images\cloth\" />
+    <Folder Include="ClientApp\src\fonts\" />
+  </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
